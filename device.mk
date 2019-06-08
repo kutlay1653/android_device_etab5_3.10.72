@@ -3,9 +3,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/Lava/IrisX8/IrisX8-vendor.mk)
+$(call inherit-product-if-exists, vendor/generalmobile/etab5/etab5-vendor.mk)
 
-LOCAL_PATH := device/Lava/IrisX8
+LOCAL_PATH := device/generalmobile/etab5
 
 PRODUCT_CHARACTERISTICS := default
 
@@ -120,11 +120,7 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     Snap
-    
-# Substratum
-PRODUCT_PACKAGES += \
-    ThemeInterfacer
-    
+
 # FM Radio
 PRODUCT_PACKAGES += \
     FMRadio \
@@ -142,7 +138,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml	
 
 PRODUCT_PROPERTY_OVERRIDES := \
-	ro.mediatek.version.release=Manish_4586@Lava \
 	ro.mediatek.platform=MT6592 \
 	ro.mediatek.chip_ver=S01 \
 	ro.mediatek.version.branch=KK1.MP1 \
@@ -162,8 +157,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.usb.config=mtp,adb
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.media.use-awesome=true
 
-PRODUCT_NAME := full_irisX8
-PRODUCT_DEVICE := IrisX8
+PRODUCT_NAME := full_etab5
+PRODUCT_DEVICE := etab5
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280

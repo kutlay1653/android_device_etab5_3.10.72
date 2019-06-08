@@ -1,7 +1,7 @@
 # inherit from the proprietary version
--include vendor/Lava/IrisX8/BoardConfigVendor.mk
+-include vendor/generalmobile/etab5/BoardConfigVendor.mk
 
-LOCAL_PATH := device/Lava/IrisX8
+LOCAL_PATH := device/generalmobile/etab5
 
 # Off NINJA
 #USE_NINJA := false
@@ -35,7 +35,7 @@ TARGET_USERIMAGES_USE_EXT4:=true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := irisX8
+TARGET_OTA_ASSERT_DEVICE := etab5
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 # MTK HARDWARE
@@ -50,7 +50,7 @@ BOARD_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
 BLOCK_BASED_OTA := false
 
 # RIL
-BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril/
+#BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril/
 
 BOARD_CONNECTIVITY_VENDOR := MediaTek
 BOARD_CONNECTIVITY_MODULE := conn_soc

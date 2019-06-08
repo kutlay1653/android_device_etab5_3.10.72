@@ -10,4 +10,4 @@ $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr:
 endif
 
 # include the non-open-source counterpart to this file
--include vendor/Lava/IrisX8/AndroidBoardVendor.mk
+-include vendor/generalmobile/etab5/AndroidBoardVendor.mk
