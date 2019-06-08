@@ -176,32 +176,6 @@ PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory
 
-<<<<<<< HEAD:device.mk
+
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-=======
-PRODUCT_PACKAGES += \
-    charger \
-    charger_res_images \
-    libnl_2 \
-    libtinyxml
 
-PRODUCT_PACKAGES += \
-    setup_fs \
-    e2fsck \
-
-# Dynamically set props
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
-    ro.product.name \
-    ro.product.manufacturer \
-    ro.product.model
-
-# HIDL
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
-	
-PRODUCT_AAPT_CONFIG := normal hdpi
-PRODUCT_AAPT_PREF_CONFIG := hdpi
-
-# call the proprietary setup
-$(call inherit-product, vendor/google/sprout/sprout-vendor.mk)
->>>>>>> f34f5b2... sprout: add a device manifest:sprout.mk
